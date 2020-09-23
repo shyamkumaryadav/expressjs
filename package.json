@@ -1,0 +1,23 @@
+{
+  "name": "expressjs",
+  "version": "1.0.0",
+  "description": "First Express on my Life",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyamkumaryadav/expressjs.git"
+  },
+  "author": "Shyamkumar yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shyamkumaryadav/expressjs/issues"
+  },
+  "homepage": "https://github.com/shyamkumaryadav/expressjs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodeman": "^1.1.2"
+  }
+}
