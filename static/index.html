@@ -16,14 +16,12 @@
             btnPost.disabled = false
         }
         const openData = e => {
-            btnPost.disabled = true
             spamji.innerText = 'Loading....'
             fetch('/', {method: 'POST'})
             .then(res => res.json())
             .then(data => {
                 spamji.innerText = JSON.stringify(data.data)
-                
-                console.log(data)
+		btnPost.disabled = true
             })
             .catch(e => console.error("Error: ", e))
         } 
