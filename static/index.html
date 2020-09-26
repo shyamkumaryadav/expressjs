@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express</title>
+</head>
+<body>
+    <h1>Hello world, ji</h1>
+    <button id='fetchData' onclick="openData()">POST /</button>
+    <span id="data" oncopy='onTextCopy()'></span>
+    <script>
+        const spamji = document.getElementById('data')
+        const btnPost = document.getElementById('fetchData')
+        const onTextCopy = e => {
+            btnPost.disabled = false
+        }
+        const openData = e => {
+            btnPost.disabled = true
+            spamji.innerText = 'Loading....'
+            fetch('/', {method: 'POST'})
+            .then(res => res.json())
+            .then(data => {
+                spamji.innerText = JSON.stringify(data.data)
+                
+                console.log(data)
+            })
+            .catch(e => console.error("Error: ", e))
+        } 
+    </script>
+</body>
+</html>
