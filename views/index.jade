@@ -2,4 +2,9 @@ extends layout
 
 block content
   h1= title
+  a(href="/users" style="font-size=12px;") Click me
+    img(src='/images/pics.jpeg')
   p Welcome to #{title}
+
+block javascript
+  script(rel='script', src='/javascripts/index.js')
