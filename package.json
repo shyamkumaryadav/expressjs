@@ -1,23 +1,18 @@
 {
   "name": "expressjs",
-  "version": "1.0.0",
-  "description": "First Express on my Life",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon main"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shyamkumaryadav/expressjs.git"
-  },
-  "author": "Shyamkumar yadav",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shyamkumaryadav/expressjs/issues"
-  },
-  "homepage": "https://github.com/shyamkumaryadav/expressjs#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "^1.4.4",
+    "debug": "^2.6.9",
+    "express": "^4.16.1",
+    "http-errors": "^1.6.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
